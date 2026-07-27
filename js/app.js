@@ -2,10 +2,12 @@ const content = document.getElementById("content");
 
 function login() {
 
-    document.getElementById("loginView")
+    document
+        .getElementById("loginView")
         .classList.add("d-none");
 
-    document.getElementById("appView")
+    document
+        .getElementById("appView")
         .classList.remove("d-none");
 
     dashboard();
@@ -68,22 +70,28 @@ function prospectos() {
 
 function politicas() {
 
-    content.innerHTML =
-        "<h2>Políticas</h2>";
+    content.innerHTML = `
+        <h2>Políticas</h2>
+        <p>Módulo en construcción.</p>
+    `;
 
 }
 
 function inventario() {
 
-    content.innerHTML =
-        "<h2>Inventario</h2>";
+    content.innerHTML = `
+        <h2>Inventario</h2>
+        <p>Módulo en construcción.</p>
+    `;
 
 }
 
 function usuarios() {
 
-    content.innerHTML =
-        "<h2>Usuarios</h2>";
+    content.innerHTML = `
+        <h2>Usuarios</h2>
+        <p>Módulo en construcción.</p>
+    `;
 
 }
 
