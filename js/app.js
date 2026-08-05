@@ -94,6 +94,77 @@ function usuarios() {
     `;
 
 }
+function herramientas() {
+
+    content.innerHTML = `
+        <h2 class="mb-4">
+            Herramientas Corporativas
+        </h2>
+
+        <p class="text-muted">
+            Acceso restringido a archivos operativos autorizados.
+        </p>
+
+        <div class="row">
+
+            <div class="col-md-6 mb-3">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body">
+
+                        <h5>
+                            <i class="bi bi-file-earmark-excel text-success"></i>
+                            Reporte Operacional
+                        </h5>
+
+                        <p class="text-muted">
+                            Archivo Excel operativo con acceso restringido.
+                        </p>
+
+                        Reporte Operacional.xlsm
+
+                            Abrir Reporte Operacional
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 mb-3">
+
+                <div class="card shadow-sm">
+
+                    <div class="card-body">
+
+                        <h5>
+                            <i class="bi bi-file-earmark-excel text-success"></i>
+                            Altas y Prospectos
+                        </h5>
+
+                        <p class="text-muted">
+                            Archivo Excel para control de altas y prospectos.
+                        </p>
+
+                        Altas y Prospectos.xlsm
+
+                            Abrir Altas y Prospectos
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    `;
+
+}
 
 function loadModule(modulo) {
 
@@ -117,6 +188,10 @@ function loadModule(modulo) {
 
         case "usuarios":
             usuarios();
+            break;
+            
+        case "herramientas":
+            herramientas();
             break;
 
     }
