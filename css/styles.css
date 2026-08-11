@@ -1,1 +1,121 @@
-.sidebar{width:260px;min-height:100vh;background:#212529}.sidebar a{display:block;color:#fff;padding:10px;text-decoration:none}.sidebar a:hover{background:#343a40}.login-card{width:400px}body{background:#f8f9fa}
+:root {
+    --xp-dark: #212529;
+    --xp-dark-2: #2b3035;
+    --xp-bg: #f4f6f9;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--xp-bg);
+    color: #212529;
+}
+
+.login-view {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    background: linear-gradient(135deg, #eef4ff 0%, #f8f9fa 60%, #e9ecef 100%);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 1rem;
+}
+
+.app-shell {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 270px;
+    min-width: 270px;
+    min-height: 100vh;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--xp-dark);
+    color: white;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.current-user {
+    margin: 1rem 0;
+    padding: .75rem;
+    border-radius: .75rem;
+    background: rgba(255,255,255,.08);
+    font-size: .9rem;
+}
+
+.sidebar .nav-link {
+    border: 0;
+    width: 100%;
+    text-align: left;
+    padding: .75rem;
+    border-radius: .6rem;
+    color: #dee2e6;
+    background: transparent;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    color: white;
+    background: var(--xp-dark-2);
+}
+
+.sidebar .nav-link i {
+    width: 1.5rem;
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.topbar {
+    min-height: 68px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.content-area {
+    padding: 1.5rem;
+}
+
+.metric-card {
+    border: 0;
+    border-radius: .9rem;
+}
+
+.policy-card {
+    height: 100%;
+    border: 0;
+    border-radius: .9rem;
+}
+
+@media (max-width: 800px) {
+    .app-shell {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-width: 100%;
+        min-height: auto;
+    }
+}
