@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://benefits-affects-rugby-vertex.trycloudflare.com";
+const API_BASE_URL = "https://intelligence-weighted-raising-springs.trycloudflare.com";
 
 const loginView = document.getElementById("loginView");
 const appView = document.getElementById("appView");
