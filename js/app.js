@@ -150,7 +150,7 @@ function openModule(name) {
 }
 
 async function renderPolicies() {
-    moduleName.textContent = "POLÍTICAS";
+    moduleName.textContent = "POLÍTICAS Y COMUNICADOS";
     const policies = await apiFetch("/politicas");
     const canPublish = ["administrador", "rh"].includes(currentUser.rol);
     const cards = policies.length ? policies.map(policy => `
