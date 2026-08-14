@@ -169,7 +169,7 @@ async function renderPolicies() {
         </div></div>`).join("") : '<div class="col-12"><div class="alert alert-info">No hay políticas vigentes disponibles.</div></div>';
     content.innerHTML = `
         <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-4">
-            <div><h1 class="h2 mb-1">Políticas internas</h1><p class="text-muted mb-0">Documentos vigentes y confirmaciones de lectura.</p></div>
+            <div><h1 class="h2 mb-1">Políticas y Comunicados</h1><p class="text-muted mb-0">Documentos vigentes y confirmaciones de lectura.</p></div>
             ${canPublish ? '<button class="btn btn-primary" onclick="showPolicyForm()"><i class="bi bi-plus-lg"></i> Nueva política</button>' : ""}
         </div>
         <div id="policyActionArea"></div><div class="row g-3">${cards}</div>`;
