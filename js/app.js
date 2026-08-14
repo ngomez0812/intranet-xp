@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://thumbnails-contest-ran-through.trycloudflare.com";
+const API_BASE_URL = "https://arctic-activists-tires-hop.trycloudflare.com";
 
 const loginView = document.getElementById("loginView");
 const appView = document.getElementById("appView");
