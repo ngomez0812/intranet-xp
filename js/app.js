@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://recommendation-frog-rolling-treasure.trycloudflare.com";
+const API_BASE_URL = "https://him-cookbook-style-stat.trycloudflare.com";
 
 const loginView = document.getElementById("loginView");
 const appView = document.getElementById("appView");
