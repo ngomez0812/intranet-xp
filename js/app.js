@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://jets-singles-auto-floating.trycloudflare.com";
+const API_BASE_URL = "https://metadata-instructors-rover-fish.trycloudflare.com";
 
 const loginView = document.getElementById("loginView");
 const appView = document.getElementById("appView");
