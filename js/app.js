@@ -154,7 +154,7 @@ async function renderDashboard() {
     const notice = pending.pendientes > 0 ? `
         <div class="alert alert-warning d-flex align-items-center justify-content-between flex-wrap gap-2 shadow-sm">
             <div><i class="bi bi-bell-fill me-2"></i><strong>Tienes ${pending.pendientes} política${pending.pendientes === 1 ? "" : "s"} pendiente${pending.pendientes === 1 ? "" : "s"} de lectura.</strong></div>
-            <button class="btn btn-warning btn-sm" onclick="openModule('politicas')">Revisar ahora</button>
+            <button class="btn btn-warning btn-sm" onclick="loadModule('politicas')">Revisar ahora</button>
         </div>` : `
         <div class="alert alert-success shadow-sm"><i class="bi bi-check-circle-fill me-2"></i>Estás al día con las políticas publicadas.</div>`;
     content.innerHTML = `
