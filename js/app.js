@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://committee-pads-thereof-satisfactory.trycloudflare.com";
+const API_BASE_URL = "https://prevention-tags-reel-marsh.trycloudflare.com";
 
 const loginView = document.getElementById("loginView");
 const appView = document.getElementById("appView");
