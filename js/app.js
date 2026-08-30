@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://favourite-dude-cad-raleigh.trycloudflare.com";
+const API_BASE_URL = "https://touring-preceding-ceremony-motels.trycloudflare.com";
 
 const loginView = document.getElementById("loginView");
 const appView = document.getElementById("appView");
