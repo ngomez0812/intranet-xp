@@ -141,7 +141,19 @@ async function loadModule(name) {
         if (name === "soporte") await renderSupport();
     } catch (error) { renderError(error.message); }
 }
-
+async function openModule(name) {
+    document.querySelectorAll("[data-module]").forEach(item => {
+        item.classList.toggle("active", item.dataset.module === name);
+    });
+    const usersToggle = document.getElementById("usersMenuToggle");
+    const usersSubmenu = document.getElementById("usersSubmenu");
+    if (usersToggle && usersSubmenu) {
+        const isUsers = String(name).startsWith("usuarios") || name === "direcciones";
+        usersToggle.setAttribute("aria-expanded", String(isUsers));
+        usersSubmenu.classList.toggle("d-none", !isUsers);
+    }
+    await loadModule(name);
+}
 async function renderDashboard() {
     moduleName.textContent = "BIENVENIDO";
     const [policies, pending, generalNotices] = await Promise.all([apiFetch("/politicas"), apiFetch("/politicas/pendientes"), apiFetch("/avisos-generales")]);
